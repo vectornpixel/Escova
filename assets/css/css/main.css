@@ -25,6 +25,7 @@ html,
 body {
   height: 100%;
   font-family: 'Avenir LT Book';
+  padding-top: 45px;
 }
 .full-width {
   width: 100%;
@@ -419,6 +420,14 @@ hr.border {
   vertical-align: top;
   padding: 4% 6%;
   font-weight: 700;
+}
+.service-wrapper {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #000;
+}
+.service_header {
+  background-color: #000;
 }
 /*
 ////////////////////////////////////////
