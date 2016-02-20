@@ -281,7 +281,7 @@ nav ul li a:active {
   color: #fff;
 }
 section {
-  padding: 50px;
+  padding: 50px 0;
 }
 section .section_content p {
   letter-spacing: 1px;
@@ -428,6 +428,14 @@ hr.border {
 }
 .service_header {
   background-color: #000;
+  padding-left: 35px;
+}
+.service_content h1 {
+  text-transform: uppercase;
+}
+.service_content hr {
+  border: 2px solid;
+  width: 50%;
 }
 /*
 ////////////////////////////////////////
