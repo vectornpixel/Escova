@@ -27,6 +27,10 @@ body {
   font-family: 'Avenir LT Book';
   padding-top: 45px;
 }
+textarea,
+input {
+  outline: none;
+}
 .full-width {
   width: 100%;
 }
@@ -192,6 +196,14 @@ header {
   top: 20%;
   text-align: center;
 }
+.hero-unit__copy .thin {
+  font-family: 'Avenir LT Light';
+  letter-spacing: 3px;
+}
+.hero-unit__copy span {
+  font-family: 'Avenir LT Medium';
+  letter-spacing: 3px;
+}
 .hero-unit__copy h1 {
   text-align: center;
   color: #cacaca;
@@ -262,6 +274,29 @@ nav ul li a:active {
   color: #cacaca;
   font-weight: 100;
 }
+.form-container input {
+  font-weight: 100;
+  display: block;
+  padding: 10px 0px 22px 0px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #d5d5d5;
+  outline: none;
+  margin-bottom: 20px;
+  background: none;
+  color: #cacaca;
+}
+.form-container textarea {
+  font-weight: 100;
+  padding: 10px 0px 22px 0px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #d5d5d5;
+  outline: none;
+  margin-bottom: 20px;
+  background: transparent;
+  color: #cacaca;
+}
 .form-field {
   border: none;
   border-bottom: 1px solid white;
@@ -269,6 +304,9 @@ nav ul li a:active {
 }
 .form-field:focus {
   background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-bottom: 1px solid #fff;
 }
 .btn-submit {
   border: none;
@@ -279,6 +317,44 @@ nav ul li a:active {
 .btn-submit:hover {
   background: #000;
   color: #fff;
+}
+.contact-us .form-container input {
+  font-weight: 100;
+  display: block;
+  padding: 10px 0px 22px 0px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #d5d5d5;
+  outline: none;
+  margin-bottom: 20px;
+  background: none;
+  color: #000;
+  box-shadow: none;
+  -moz-box-shadow: none;
+}
+.contact-us .form-container textarea {
+  font-weight: 100;
+  padding: 10px 0px 22px 0px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #d5d5d5;
+  outline: none;
+  margin-bottom: 20px;
+  background: transparent;
+  color: #000;
+  box-shadow: none;
+  -moz-box-shadow: none;
+}
+.contact-us .form-field {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+}
+.contact-us .form-field:focus {
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-bottom: 1px solid #000;
 }
 section {
   padding: 50px 0;
