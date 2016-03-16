@@ -1,0 +1,53 @@
+header{
+  height:150px;
+
+}
+
+.hero-unit{
+  position: relative;
+
+  &__copy{
+    position: absolute;
+    //width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top:20%;
+    text-align: center;
+    .thin{
+      font-family: @font-light;
+      letter-spacing: 3px;
+    }
+    span{
+      font-family: @font-medium;
+      letter-spacing: 3px;
+    }
+
+
+
+    h1{
+
+      text-align: center;
+      color:@lightgrey;
+      //font-size: 72px;
+      font-weight: 100;
+      letter-spacing: 5px;
+      span{
+        color:@brand-primary;
+
+      }
+    }
+    h4{
+      color:@lightgrey;
+      font-weight: 300;
+      letter-spacing: 5px;
+    }
+  }
+  .hero-unit__bg{
+    position: absolute;
+  }
+  img{
+    width:100%;
+  }
+}
