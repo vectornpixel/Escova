@@ -106,7 +106,10 @@ query_posts('post_type=stylist');
 											?>
 										<?php endif; ?>
 										<div class="mix col-xs-12 col-md-3 <?php printf( esc_html( $show_teams ) )?>">
-											<?php the_title(); ?>
+											<div class="mix-title">
+												<?php the_title(); ?>
+											</div>
+
 											<? the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
 										</div>
 										<? //get_template_part( 'template-parts/content', 'stylists' ); ?>
@@ -128,6 +131,23 @@ query_posts('post_type=stylist');
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
+<script type="text/javascript">
+	$(document).ready(function(){
 
+		$(".mix-title").hide();
+		$(".mix img").on('mouseover', function(){
+
+			$(this).css("opacity", "0.5");
+			$(".mix-title").show();
+
+		});
+		$(".mix img").on('mouseout', function(){
+			$(this).css("opacity", "1");
+			$(".mix-title").hide();
+
+		});
+
+	});
+</script>
 <?php
 get_footer();
