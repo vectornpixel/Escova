@@ -20,11 +20,11 @@
 				<div class="row">
 
 					<div class="owl-carousel">
-						<div><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/client1.png"></div>
-						<div><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/client2.png"></div>
-						<div><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/client3.png"></div>
-						<div><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/client4.png"></div>
-						<div><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/client5.png"></div>
+						<div><img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/client1.png"></div>
+						<div><img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/client2.png"></div>
+						<div><img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/client3.png"></div>
+						<div><img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/client4.png"></div>
+						<div><img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/client5.png"></div>
 					</div>
 
 				</div>
@@ -40,7 +40,7 @@
 							<h2>Contact Us</h2>
 							<hr>
 						</div>
-						<div class="col-md-offset-1 col-md-3 text-uppercase">
+						<div class="col-xs-8 col-md-offset-1 col-md-3 text-uppercase">
 							<h4>Address</h4>
 							<p class="address">387 S. Old Woodward<br>Birmingham MI 48009 US</p>
 							<br>
@@ -48,7 +48,7 @@
 							<p class="beta white">248.647.1111</p>
 
 						</div>
-						<div class="col-md-2 text-uppercase">
+						<div class="col-xs-4 col-md-2 text-uppercase">
 							<h4>Hours:</h4>
 							<ul class="days list-unstyled pull-left">
 								<li>MON</li>
@@ -70,7 +70,7 @@
 							</ul>
 
 						</div>
-						<div class="col-md-3 text-uppercase">
+						<div class="col-xs-12 col-md-3 text-uppercase">
 							<h4>Email Us</h4>
 							<form class="form-container" name="contact-form" method="post">
 								<div class="form-group">
@@ -91,16 +91,16 @@
 
 							</form>
 						</div>
-						<div class="col-md-3 text-uppercase">
+						<div class="col-xs-12 col-md-3 text-uppercase">
 							<h4>Social</h4>
 							<div class="social-icons">
 								<ul class="list-unstyled list-inline">
-									<li><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/facebook.png"></li>
-									<li><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/instagram.png"></li>
+									<li><img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/facebook.png"></li>
+									<li><img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/instagram.png"></li>
 								</ul>
 								<ul class="list-unstyled list-inline">
-									<li><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/pinterest.png"></li>
-									<li><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/google.png"></li>
+									<li><img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/pinterest.png"></li>
+									<li><img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/google.png"></li>
 								</ul>
 							</div>
 						</div>
@@ -109,14 +109,14 @@
 			</div>
 		</section>
 		<div class="location_map">
-			<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/map.jpg">
+			<img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/map.jpg">
 		</div>
 		<section class="alt-section">
 			<div class="container">
 				<div class="footer_copyright">
 					<div class="row">
 						<div class="col-md-6">
-							<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/logo2.png">
+							<img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/logo2.png">
 						</div>
 						<div class="col-md-6">
 							<p class="milli pull-right"><?php printf( esc_html__( '2016 © Escova. All rights reserved. Design by EandGDesign')); ?></p>
@@ -130,14 +130,22 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script src="http://localhost:8888/Escova/wp-content/themes/escova/assets/js/modernizr.custom.js"></script>
-<script src="http://localhost:8888/Escova/wp-content/themes/escova/assets/js/owl.carousel.min.js"></script>
-<script src="http://localhost:8888/Escova/wp-content/themes/escova/assets/js/jquery.mousewheel.min.js"></script>
+<script src="<?php echo site_url(); ?>/wp-content/themes/escova/assets/js/modernizr.custom.js"></script>
+<script src="<?php echo site_url(); ?>/wp-content/themes/escova/assets/js/owl.carousel.min.js"></script>
+<script src="<?php echo site_url(); ?>/wp-content/themes/escova/assets/js/jquery.mousewheel.min.js"></script>
+<script src="<?php echo site_url(); ?>/wp-content/themes/escova/assets/js/bootstrap.min.js"></script>
 <script src='http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js?v=2.1.9'></script>
 <script type="text/javascript">
 	$(function(){
 		$('#Container').mixItUp({
-			effects: 'fade'
+			load: {
+				filter: '.Hair'
+			}
+		});
+		$('#Container2').mixItUp({
+			load: {
+				filter: '.Stylist'
+			}
 		});
 	});
 	$(document).ready(function(){

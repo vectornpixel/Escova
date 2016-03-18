@@ -26,43 +26,16 @@ $title = $queried_post->post_title;
 ?>
 	<div class="hero-unit">
 		<div class="hero-unit__image">
-			<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/services-banner.jpg">
+			<img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/services-banner.jpg">
 		</div>
 	</div>
 
 	<div class="container">
 		<section>
 			<div class="row">
-
-				<div class="section_header text-center text-uppercase">
-					<?php the_title( '<h1 class="mega header_title entry-title">', '</h1>' ); ?>
-
-					<hr>
-				</div>
-				<div class="section_content col-md-8 col-md-offset-2 col-lg-offset-2 text-center">
-
-					<?php the_content() ?>
-
-					<?php
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'escova' ),
-						'after'  => '</div>',
-					) );
-					?>
-
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-		</section>
-
-	</div>
-	<div class="container">
-		<section>
-			<div class="row">
 				<div class="col-md-6 no-padding">
 					<div class="service_header">
-						<img class="img-responsive" src="http://localhost:8888/Escova/wp-content/themes/escova/images/services-header.png">
+						<img class="img-responsive" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/services-header.png">
 					</div>
 				</div>
 
@@ -91,7 +64,7 @@ $title = $queried_post->post_title;
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="row">
+
 				<div id="Container" class="filter-container">
 					<div class="row">
 						<!--<h1 class="text-center">CUT & STYLE</h1>-->
@@ -102,7 +75,13 @@ $title = $queried_post->post_title;
 								<div class="mix col-xs-6 col-md-2 <?php foreach( get_the_category() as $cat ) { echo $cat->name . '  '; } ?>">
 									<div class="service-wrapper">
 										<div class="service-wrapper_title">
+											<?php
+											/*$key = 'service';
+											$themeta = get_post_meta($post->ID, $key, TRUE);
+											if($themeta != ''):
 
+											endif;*/
+											?>
 											<p class="milli"><?php echo get_post_meta($post->ID, 'service', true); ?></p>
 
 										</div>
@@ -168,7 +147,7 @@ $title = $queried_post->post_title;
 						</div>
 					</div>
 				</div>
-			</div>
+
 			<div class="clearfix"></div>
 
 

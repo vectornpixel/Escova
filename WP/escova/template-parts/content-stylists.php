@@ -14,7 +14,7 @@
 	<div class="entry-content">
 		<div class="hero-unit">
 			<div class="hero-unit__image">
-				<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/services-banner.jpg">
+				<img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/services-banner.jpg">
 			</div>
 		</div>
 
@@ -65,76 +65,76 @@
 							<? the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Ana.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Ana.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Andrie.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Andrie.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Bianca.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Bianca.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Bill.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Bill.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Bobby.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Bobby.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Edie.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Edie.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Gabrialla.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Gabrialla.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 management">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Hailey.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Hailey.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Hoffet.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Hoffet.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Holly.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Holly.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Jackie.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Jackie.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 makeup">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Jeff.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Jeff.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Julia.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Julia.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Kim.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Kim.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Lissa.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Lissa.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Lora.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Lora.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Loretta.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Loretta.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Marco.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Marco.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 nails">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Mea.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Mea.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Mira.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Mira.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Molly.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Molly.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 stylist">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Stephanie.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Stephanie.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 management">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Taylor.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Taylor.jpg">
 						</div>
 						<div class="mix col-xs-12 col-md-3 management">
-							<img class="full-width" src="http://localhost:8888/Escova/wp-content/themes/escova/images/staff/Victoria.jpg">
+							<img class="full-width" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/staff/Victoria.jpg">
 						</div>
 						<div class="gap"></div>
 						<div class="gap"></div>

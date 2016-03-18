@@ -36,7 +36,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><img src="http://localhost:8888/Escova/wp-content/themes/escova/images/logo.png"></a>
+
+					<a class="navbar-brand" href="index.html"><img src="<?php echo site_url(); ?>/wp-content/uploads/2016/03/escova-logo.png"></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu','menu_class' => 'nav navbar-nav navbar-right text-uppercase', ) ); ?>

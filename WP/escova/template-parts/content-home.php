@@ -14,7 +14,7 @@
 	<div class="entry-content">
 		<div class="hero-unit">
 			<div class="hero-unit__image">
-				<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/pic.jpg">
+				<img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/pic.jpg">
 			</div>
 		</div>
 		<div class="container">
@@ -41,7 +41,7 @@
 			<hr>
 			<div class="container">
 				<div class="section_header text-center text-uppercase">
-					<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/icon-services.png">
+					<img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/icon-services.png">
 					<h1>Our Services</h1>
 				</div>
 				<div class="section_content text-center">
@@ -51,7 +51,7 @@
 						<li>Oxygen / Facial</li>
 						<li>Nails</li>
 					</ul>
-					<button class="button">View</button>
+					<a class="button" >View</a>
 				</div>
 			</div>
 			<hr>
@@ -60,7 +60,7 @@
 		<div class="second_section">
 
 			<div class="second_background">
-				<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/pic2.jpg">
+				<img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/pic2.jpg">
 			</div>
 			<div class="second_section__copy Absolute-Center is-Responsive">
 				<p class="giga thin">Think<br><span class="bold">Beyond</span><br><span class="thin">Beautiful</span>
@@ -74,7 +74,7 @@
 		<section>
 			<div class="container">
 				<div class="col-md-6">
-					<img class="img-responsive" src="http://localhost:8888/Escova/wp-content/themes/escova/images/hourmag.jpg">
+					<img class="img-responsive" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/hourmag.jpg">
 				</div>
 				<div class="col-md-6">
 					<div class="section_content nominated text-center text-uppercase">

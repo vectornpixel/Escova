@@ -14,7 +14,7 @@
 	<div class="entry-content">
 		<div class="hero-unit">
 			<div class="hero-unit__image">
-				<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/services-banner.jpg">
+				<img src="<?php echo site_url(); ?>/wp-content/themes/escova/images/services-banner.jpg">
 			</div>
 		</div>
 
@@ -50,7 +50,7 @@
 				<div class="row">
 					<div class="col-md-6 no-padding">
 						<div class="service_header">
-							<img class="img-responsive" src="http://localhost:8888/Escova/wp-content/themes/escova/images/services-header.png">
+							<img class="img-responsive" src="<?php echo site_url(); ?>/wp-content/themes/escova/images/services-header.png">
 						</div>
 					</div>
 					<div class="col-md-6 no-padding">

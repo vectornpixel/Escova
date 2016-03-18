@@ -32,7 +32,7 @@ query_posts('post_type=stylist');
 		<main id="main" class="site-main" role="main">
 			<div class="hero-unit">
 				<div class="hero-unit__image">
-					<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/services-banner.jpg">
+					<? the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
 				</div>
 			</div>
 			<div class="container">
@@ -85,8 +85,8 @@ query_posts('post_type=stylist');
 							</ul>
 						</div>
 					</div>
-					<div class="row">
-						<div id="Container" class="filter-container">
+
+						<div id="Container2" class="filter-container">
 							<div class="row">
 
 								<?php if ( have_posts() ) : ?>
@@ -105,9 +105,9 @@ query_posts('post_type=stylist');
 											$show_teams = join( ", ", $team_links );
 											?>
 										<?php endif; ?>
-										<div class="mix col-xs-12 col-md-3 <?php printf( esc_html( $show_teams ) )?>">
+										<div class="mix col-xs-6 col-md-3 <?php printf( esc_html( $show_teams ) )?>">
 											<div class="mix-title">
-												<?php the_title(); ?>
+												<?php //the_title() ?>
 											</div>
 
 											<? the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
@@ -125,7 +125,7 @@ query_posts('post_type=stylist');
 							<div class="gap"></div>
 							<div class="gap"></div>
 						</div>
-					</div>
+
 					<div class="clearfix"></div>
 				</section>
 			</div>
@@ -134,18 +134,22 @@ query_posts('post_type=stylist');
 <script type="text/javascript">
 	$(document).ready(function(){
 
-		$(".mix-title").hide();
-		$(".mix img").on('mouseover', function(){
+		//var title = <?php //the_title(); ?>
+		//$(".mix-title").hide();
+		$(".mix img").bind({
+			mouseover: function(){
+				$(this).css("opacity", "0.5");
+				//$(".mix-title").show();
+			},
+			mouseout: function(){
+				$(this).css("opacity", "1");
+				//$(".mix-title").hide();
+			}
+		})
+		/*$(".mix img").on('mouseover', function(){
 
 			$(this).css("opacity", "0.5");
-			$(".mix-title").show();
-
-		});
-		$(".mix img").on('mouseout', function(){
-			$(this).css("opacity", "1");
-			$(".mix-title").hide();
-
-		});
+		});*/
 
 	});
 </script>

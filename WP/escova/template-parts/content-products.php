@@ -17,10 +17,10 @@
 			<section>
 
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-xs-12 col-md-4 hidden-xs">
 						<? the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
 					</div>
-					<div class="col-md-8">
+					<div class="col-xs-12 col-md-8">
 						<h1 class="text-uppercase"><?php the_title(); ?></h1>
 						<hr>
 						<p class="epsilon">

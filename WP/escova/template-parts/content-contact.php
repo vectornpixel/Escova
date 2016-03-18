@@ -21,7 +21,7 @@
 	<div class="entry-content">
 		<div class="hero-unit">
 			<div class="hero-unit__image">
-				<img src="http://localhost:8888/Escova/wp-content/themes/escova/images/services-banner.jpg">
+				<? the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
 			</div>
 		</div>
 
